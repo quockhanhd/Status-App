@@ -21,7 +21,7 @@ namespace Status_App
         {
             Close();
         }
-        //btnDangNhap_Click mật khẩu và tài khoản mạc định là : admin
+        //btnDangNhap_Click mật khẩu và tài khoản mạc định là : admin 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             if (txtTaiKhoan.Text == "admin" && txtMatKhau.Text == "admin")
