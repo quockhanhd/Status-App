@@ -16,11 +16,13 @@ namespace Status_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmLogin frm = new frmLogin();
-            if (frm.ShowDialog()== DialogResult.OK)
-            {
-                frm.Show();
-            }
+            //frmLogin frm = new frmLogin();
+            //if (frm.ShowDialog()== DialogResult.OK)
+            //{
+            //    frm.Show();
+            //}
+            frmMain f = new frmMain();
+            f.ShowDialog();
         }
     }
 }
