@@ -70,7 +70,7 @@ namespace Status_App
                 s.FileName += listBox1.SelectedItems[0].ToString() + ".doc";
 
             }
-            //"E:\\C#\\TaiLieu\\Môi Trường và Công Cụ Lập Trình\\Status App\\Status App\\bin\\Debug\\20-09-2017.doc"
+            ///"E:\\C#\\TaiLieu\\Môi Trường và Công Cụ Lập Trình\\Status App\\Status App\\bin\\Debug\\20-09-2017.doc"
             //   "E:\\C#\\TaiLieu\\Môi Trường và Công Cụ Lập Trình\\Status App\\Status App\\bin\\Debug\\20-9-2017.doc"
             richTextBox1.LoadFile(s.FileName);
             // mo();
