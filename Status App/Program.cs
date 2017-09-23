@@ -21,8 +21,12 @@ namespace Status_App
             //{
             //    frm.Show();
             //}
-            frmMain f = new frmMain();
-            f.ShowDialog();
+            frmMain1 f = new frmMain1();
+            // f.ShowDialog();
+         frmCamera fi = new frmCamera();
+            //fi.ShowDialog();
+            frmMain main = new frmMain();
+            main.ShowDialog();
         }
     }
 }

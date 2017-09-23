@@ -79,6 +79,7 @@
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(187, 20);
             this.txtTaiKhoan.TabIndex = 0;
+            this.txtTaiKhoan.Text = "     ";
             // 
             // txtMatKhau
             // 
@@ -127,7 +128,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtTaiKhoan);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(233, 65);
+            this.groupBox1.Location = new System.Drawing.Point(236, 65);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(312, 156);
             this.groupBox1.TabIndex = 5;
@@ -145,7 +146,7 @@
             this.Controls.Add(this.label3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
-            this.Text = "Đăng Nhập Hệ Thống";
+            this.Text = "                       ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
