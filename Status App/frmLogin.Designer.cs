@@ -79,7 +79,6 @@
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(187, 20);
             this.txtTaiKhoan.TabIndex = 0;
-            this.txtTaiKhoan.Text = "     ";
             // 
             // txtMatKhau
             // 

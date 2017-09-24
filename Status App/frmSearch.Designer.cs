@@ -98,7 +98,7 @@
             // 
             // btnTK
             // 
-            this.btnTK.Location = new System.Drawing.Point(108, 161);
+            this.btnTK.Location = new System.Drawing.Point(108, 167);
             this.btnTK.Name = "btnTK";
             this.btnTK.Size = new System.Drawing.Size(75, 23);
             this.btnTK.TabIndex = 2;
@@ -120,6 +120,7 @@
             this.Controls.Add(this.txtThang);
             this.Controls.Add(this.txtNgay);
             this.Name = "frmSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmSearch";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -17,26 +17,26 @@ namespace Status_App
             InitializeComponent();
         }
         
-
+     
         private void btnChup_Click(object sender, EventArgs e)
         {   
             Image capturedImage = cameraControl1.TakeSnapshot();
             UpdateImg(capturedImage);
-            MessageBox.Show("Chụp Thành Công! " + "\n" + "Đường dẫn file lưu ở :C:\\FilesStatusApp ");
+            
+            MessageBox.Show("Chụp Thành Công", "Hỏi", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            this.Close();
+
         }
         private void UpdateImg(Image image)
         {
             using (var stream = new System.IO.MemoryStream())
             {
                 image.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                image.Save("C:\\FilesStatusApp\\img1.jpg");
+                image.Save("Avatas\\img1.jpg");
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+   
 
         
     }

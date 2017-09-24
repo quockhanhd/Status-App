@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.Instrumentation, Version=14.1.0.5, Culture=neutral, PublicKeyToken=f90dc37c26666a67, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -81,12 +82,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMain1.Designer.cs">
-      <DependentUpon>frmMain1.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmQuanLyNK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,12 +94,7 @@
     <Compile Include="frmSearch.Designer.cs">
       <DependentUpon>frmSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmViet.Designer.cs">
-      <DependentUpon>frmViet.cs</DependentUpon>
-    </Compile>
+    <Compile Include="playSound.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Uc.cs">
@@ -122,17 +112,11 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain1.resx">
-      <DependentUpon>frmMain1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyNK.resx">
       <DependentUpon>frmQuanLyNK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearch.resx">
       <DependentUpon>frmSearch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmViet.resx">
-      <DependentUpon>frmViet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

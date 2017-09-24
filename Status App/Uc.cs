@@ -12,23 +12,35 @@ namespace Status_App
 {
     public partial class Uc : UserControl
     {
-        private Button btnFont;
+    
         private Button btnColor;
         public Color curColor
         {
-            get { return this.btnColor.BackColor; }
+            get { return btnColor.BackColor; }
+  
         }
-        
-        /// //////////
-        //public Font font
-        //{
-        //    get { return this.btnFont. }
-        //}
-        
+
         public Uc()
         {
             InitializeComponent();
         }
 
+       
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            this.btnColor = sender as Button;
+           
+        }
+
+        private void buttonChonMau_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.btnColor.BackColor = colorDialog1.Color;
+                
+            }
+           
+        }
     }
 }

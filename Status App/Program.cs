@@ -16,17 +16,16 @@ namespace Status_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //frmLogin frm = new frmLogin();
-            //if (frm.ShowDialog()== DialogResult.OK)
-            //{
-            //    frm.Show();
-            //}
-            frmMain1 f = new frmMain1();
-            // f.ShowDialog();
-         frmCamera fi = new frmCamera();
-            //fi.ShowDialog();
-            frmMain main = new frmMain();
-            main.ShowDialog();
+            frmLogin frmLg= new frmLogin();
+            frmMain frmm = new frmMain();
+            if (frmLg.ShowDialog() == DialogResult.OK)
+            {
+                frmm.ShowDialog();
+            }
+            
+       
+            
+        
         }
     }
 }

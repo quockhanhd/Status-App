@@ -26,6 +26,9 @@ namespace Status_App
         {
             if (txtTaiKhoan.Text == "admin" && txtMatKhau.Text == "admin")
                 DialogResult = DialogResult.OK;
+            else
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu");
         }
+        
     }
 }

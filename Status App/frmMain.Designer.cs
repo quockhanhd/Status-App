@@ -37,18 +37,20 @@
             this.pbAvatar = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnQuanLy = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.rtbThongTin = new System.Windows.Forms.RichTextBox();
+            this.lblTuBach = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnChonHinh = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLuuTT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.BackColor = System.Drawing.Color.Red;
-            this.monthCalendar1.Location = new System.Drawing.Point(78, 257);
+            this.monthCalendar1.Location = new System.Drawing.Point(77, 327);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             // 
@@ -59,24 +61,28 @@
             // lbGio
             // 
             this.lbGio.AutoSize = true;
-            this.lbGio.BackColor = System.Drawing.Color.DimGray;
-            this.lbGio.Location = new System.Drawing.Point(574, 29);
+            this.lbGio.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lbGio.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGio.Location = new System.Drawing.Point(531, 3);
             this.lbGio.Name = "lbGio";
-            this.lbGio.Size = new System.Drawing.Size(26, 13);
+            this.lbGio.Size = new System.Drawing.Size(34, 21);
             this.lbGio.TabIndex = 2;
-            this.lbGio.Text = "time";
+            this.lbGio.Text = "hh";
             // 
             // lbPhut
             // 
             this.lbPhut.AutoSize = true;
-            this.lbPhut.Location = new System.Drawing.Point(618, 29);
+            this.lbPhut.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lbPhut.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPhut.Location = new System.Drawing.Point(567, 3);
             this.lbPhut.Name = "lbPhut";
-            this.lbPhut.Size = new System.Drawing.Size(35, 13);
+            this.lbPhut.Size = new System.Drawing.Size(40, 21);
             this.lbPhut.TabIndex = 3;
-            this.lbPhut.Text = "label2";
+            this.lbPhut.Text = "mm";
             // 
             // pbAvatar
             // 
+            this.pbAvatar.BackColor = System.Drawing.Color.NavajoWhite;
             this.pbAvatar.Location = new System.Drawing.Point(77, 23);
             this.pbAvatar.Name = "pbAvatar";
             this.pbAvatar.Size = new System.Drawing.Size(167, 124);
@@ -88,7 +94,8 @@
             // 
             this.button2.AutoSize = true;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(699, 19);
+            this.button2.Location = new System.Drawing.Point(634, -1);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 32);
             this.button2.TabIndex = 5;
@@ -97,72 +104,103 @@
             // 
             // btnQuanLy
             // 
-            this.btnQuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLy.Location = new System.Drawing.Point(78, 180);
+            this.btnQuanLy.BackColor = System.Drawing.Color.Beige;
+            this.btnQuanLy.Font = new System.Drawing.Font("UVF A Charming Font Expanded", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(77, 223);
             this.btnQuanLy.Name = "btnQuanLy";
-            this.btnQuanLy.Size = new System.Drawing.Size(166, 45);
+            this.btnQuanLy.Size = new System.Drawing.Size(227, 82);
             this.btnQuanLy.TabIndex = 0;
             this.btnQuanLy.Text = "Quản Lý Nhật ký";
-            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.UseVisualStyleBackColor = false;
             this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
-            // richTextBox1
+            // rtbThongTin
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(426, 94);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(285, 275);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "dfghdfg :";
+            this.rtbThongTin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbThongTin.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.rtbThongTin.Location = new System.Drawing.Point(368, 107);
+            this.rtbThongTin.Name = "rtbThongTin";
+            this.rtbThongTin.Size = new System.Drawing.Size(285, 342);
+            this.rtbThongTin.TabIndex = 6;
+            this.rtbThongTin.Text = "\nHọ và Tên:  \n\nNgày Sinh:  \n\nSở Thích:    ";
             // 
-            // label3
+            // lblTuBach
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.label3.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(526, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 22);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Tự Bạch";
+            this.lblTuBach.AutoSize = true;
+            this.lblTuBach.BackColor = System.Drawing.Color.White;
+            this.lblTuBach.Font = new System.Drawing.Font("UVF Slim Tony", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuBach.Location = new System.Drawing.Point(368, 61);
+            this.lblTuBach.Name = "lblTuBach";
+            this.lblTuBach.Padding = new System.Windows.Forms.Padding(20, 0, 58, 0);
+            this.lblTuBach.Size = new System.Drawing.Size(285, 48);
+            this.lblTuBach.TabIndex = 7;
+            this.lblTuBach.Text = "Thông tin cá nhân";
+            this.lblTuBach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnChonHinh
             // 
+            this.btnChonHinh.BackColor = System.Drawing.Color.Beige;
             this.btnChonHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChonHinh.Location = new System.Drawing.Point(263, 29);
+            this.btnChonHinh.ForeColor = System.Drawing.Color.Black;
+            this.btnChonHinh.Location = new System.Drawing.Point(77, 171);
             this.btnChonHinh.Name = "btnChonHinh";
-            this.btnChonHinh.Size = new System.Drawing.Size(91, 22);
+            this.btnChonHinh.Size = new System.Drawing.Size(91, 27);
             this.btnChonHinh.TabIndex = 0;
             this.btnChonHinh.Text = "Chọn Hình";
-            this.btnChonHinh.UseVisualStyleBackColor = true;
+            this.btnChonHinh.UseVisualStyleBackColor = false;
             this.btnChonHinh.Click += new System.EventHandler(this.btnChonHinh_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(559, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(15, 21);
+            this.label1.TabIndex = 2;
+            this.label1.Text = ":";
+            // 
+            // btnLuuTT
+            // 
+            this.btnLuuTT.BackColor = System.Drawing.Color.Beige;
+            this.btnLuuTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuTT.ForeColor = System.Drawing.Color.Black;
+            this.btnLuuTT.Location = new System.Drawing.Point(563, 467);
+            this.btnLuuTT.Name = "btnLuuTT";
+            this.btnLuuTT.Size = new System.Drawing.Size(91, 22);
+            this.btnLuuTT.TabIndex = 0;
+            this.btnLuuTT.Text = "Lưu";
+            this.btnLuuTT.UseVisualStyleBackColor = false;
+            this.btnLuuTT.Click += new System.EventHandler(this.btnLuuTT_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(774, 437);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(702, 501);
+            this.Controls.Add(this.lblTuBach);
+            this.Controls.Add(this.rtbThongTin);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pbAvatar);
             this.Controls.Add(this.lbPhut);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbGio);
             this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.btnLuuTT);
             this.Controls.Add(this.btnChonHinh);
             this.Controls.Add(this.btnQuanLy);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "7";
-            this.TransparencyKey = System.Drawing.Color.RosyBrown;
+            this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.ResumeLayout(false);
@@ -178,10 +216,12 @@
         private System.Windows.Forms.PictureBox pbAvatar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnQuanLy;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox rtbThongTin;
+        private System.Windows.Forms.Label lblTuBach;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnChonHinh;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLuuTT;
     }
 }
